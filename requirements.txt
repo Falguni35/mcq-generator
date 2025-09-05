@@ -1,5 +1,10 @@
-Flask==2.3.3
-Flask-CORS==4.0.0
-PyPDF2==3.0.1
-spacy==3.7.2
-gunicorn==21.2.0
+Flask
+flask-cors
+PyPDF2
+gunicorn
+
+# Install spacy with prebuilt wheels only
+spacy==3.7.2 --only-binary=:all:
+
+# Pre-download the English model (no need for install_spacy_model.py)
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
