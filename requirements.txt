@@ -4,7 +4,7 @@ PyPDF2
 gunicorn
 
 # Install spacy with prebuilt wheels only
-spacy==3.7.2 --only-binary=:all:
+spacy==3.7.2
 
 # Pre-download the English model (no need for install_spacy_model.py)
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whlx
